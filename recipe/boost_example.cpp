@@ -7,5 +7,5 @@ int main()
   std::string filename = "output.txt";
   std::ofstream ofs(filename.c_str());
   boost::archive::text_oarchive oa(ofs);
-  return -1;
+  return 0;
 }
