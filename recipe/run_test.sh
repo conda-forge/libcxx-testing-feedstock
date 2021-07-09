@@ -1,4 +1,4 @@
-set -e
+set -ex
 
 pushd pybind11_exception_rtti_test
 make test
