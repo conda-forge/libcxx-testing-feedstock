@@ -9,7 +9,7 @@ source:
   path: .
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not (osx and python_impl == 'cpython')]
   script:
     echo "works!"
