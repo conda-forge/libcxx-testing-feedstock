@@ -8,8 +8,23 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
-      osx_64_:
-        CONFIG: osx_64_
+      osx_64_cxx_compiler_version11:
+        CONFIG: osx_64_cxx_compiler_version11
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version12:
+        CONFIG: osx_64_cxx_compiler_version12
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version13:
+        CONFIG: osx_64_cxx_compiler_version13
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version14:
+        CONFIG: osx_64_cxx_compiler_version14
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version15:
+        CONFIG: osx_64_cxx_compiler_version15
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version16:
+        CONFIG: osx_64_cxx_compiler_version16
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
