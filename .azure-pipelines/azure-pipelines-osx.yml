@@ -8,6 +8,9 @@ jobs:
     vmImage: macOS-11
   strategy:
     matrix:
+      osx_64_c_compiler_version10cxx_compiler_version10:
+        CONFIG: osx_64_c_compiler_version10cxx_compiler_version10
+        UPLOAD_PACKAGES: 'True'
       osx_64_c_compiler_version11cxx_compiler_version11:
         CONFIG: osx_64_c_compiler_version11cxx_compiler_version11
         UPLOAD_PACKAGES: 'True'
@@ -25,6 +28,21 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_c_compiler_version16cxx_compiler_version16:
         CONFIG: osx_64_c_compiler_version16cxx_compiler_version16
+        UPLOAD_PACKAGES: 'True'
+      osx_64_c_compiler_version5cxx_compiler_version5:
+        CONFIG: osx_64_c_compiler_version5cxx_compiler_version5
+        UPLOAD_PACKAGES: 'True'
+      osx_64_c_compiler_version6cxx_compiler_version6:
+        CONFIG: osx_64_c_compiler_version6cxx_compiler_version6
+        UPLOAD_PACKAGES: 'True'
+      osx_64_c_compiler_version7cxx_compiler_version7:
+        CONFIG: osx_64_c_compiler_version7cxx_compiler_version7
+        UPLOAD_PACKAGES: 'True'
+      osx_64_c_compiler_version8cxx_compiler_version8:
+        CONFIG: osx_64_c_compiler_version8cxx_compiler_version8
+        UPLOAD_PACKAGES: 'True'
+      osx_64_c_compiler_version9cxx_compiler_version9:
+        CONFIG: osx_64_c_compiler_version9cxx_compiler_version9
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 

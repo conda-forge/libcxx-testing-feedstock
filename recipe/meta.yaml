@@ -23,7 +23,7 @@ requirements:
     - pybind11
     - {{ compiler('cxx') }}
     # pin this to a specific clang version on osx
-    - clang-{{ c_compiler_version }}  # [osx]
+    - clang {{ c_compiler_version }}  # [osx]
     - make
     - pip
     - boost-cpp
