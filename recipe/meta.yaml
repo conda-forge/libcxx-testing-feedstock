@@ -12,7 +12,7 @@ source:
   path: .
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not (osx and python_impl == 'cpython')]
   script:
     echo "works!"
@@ -22,6 +22,8 @@ requirements:
     - python
     - pybind11
     - {{ compiler('cxx') }}
+    # pin this to a specific clang version on osx
+    - clang-{{ c_compiler_version }}  # [osx]
     - make
     - pip
     - boost-cpp
