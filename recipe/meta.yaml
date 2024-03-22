@@ -12,7 +12,7 @@ source:
   path: .
 
 build:
-  number: 1
+  number: 2
   skip: true  # [not (osx and python_impl == 'cpython')]
   script:
     echo "works!"
@@ -26,7 +26,7 @@ requirements:
     - clang-{{ c_compiler_version }}  # [osx]
     - make
     - pip
-    - boost-cpp
+    - libboost-devel
 
 test:
   files:
