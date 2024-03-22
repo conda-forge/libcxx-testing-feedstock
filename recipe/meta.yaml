@@ -1,10 +1,9 @@
-{% set name = "libcxx-testing" %}
 # this number only needs to be increased if
 # there are substantial infrastructure changes
 {% set testing_generation = "0" %}
 
 package:
-  name: {{ name|lower }}
+  name: libcxx-testing
   # version correspondence is: 0.{{ CLANG_MAJOR }}
   version: {{ testing_generation }}.{{ c_compiler_version }}
 
