@@ -214,6 +214,3 @@ Feedstock Maintainers
 * [@beckermr](https://github.com/beckermr/)
 * [@h-vetinari](https://github.com/h-vetinari/)
 
-
-<!-- dummy commit to enable rerendering -->
-
