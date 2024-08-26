@@ -1,7 +1,7 @@
 # this number only needs to be increased if
 # there are substantial infrastructure changes
 {% set testing_generation = "0" %}
-{% set libcxx_major = 16 %}
+{% set libcxx_major = 17 %}
 
 {% if cxx_compiler_version is undefined %}
 {% set cxx_compiler_version = libcxx_major %}
