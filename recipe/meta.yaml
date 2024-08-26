@@ -17,7 +17,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [not (osx and python_impl == 'cpython')]
+  skip: true  # [not osx]
   script:
     echo "works!"
 
@@ -29,7 +29,7 @@ requirements:
     - {{ compiler('cxx') }}
     - libcxx {{ libcxx_major }}.*
     # pin this to a specific clang version on osx
-    - clang-{{ c_compiler_version }}  # [osx]
+    - clang-{{ cxx_compiler_version }}
     - make
     - pip
     - libboost-devel
