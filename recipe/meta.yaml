@@ -25,6 +25,7 @@ requirements:
   run:
     - python
     - pybind11
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - libcxx {{ libcxx_major }}.*
     # pin this to a specific clang version on osx
