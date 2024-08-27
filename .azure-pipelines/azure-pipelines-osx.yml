@@ -26,6 +26,9 @@ jobs:
       osx_64_cxx_compiler_version16:
         CONFIG: osx_64_cxx_compiler_version16
         UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version17:
+        CONFIG: osx_64_cxx_compiler_version17
+        UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
 
