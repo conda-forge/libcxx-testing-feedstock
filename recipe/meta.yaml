@@ -2,9 +2,11 @@
 # there are substantial infrastructure changes
 {% set testing_generation = "0" %}
 
+{% if libcxx_major is undefined %}
+{% set libcxx_major = 99 %}
+{% endif %}
 {% if cxx_compiler_version is undefined %}
 {% set cxx_compiler_version = libcxx_major %}
-{% set libcxx_major = 99 %}
 {% endif %}
 
 package:
@@ -16,7 +18,7 @@ source:
   path: .
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not osx]
   script:
     echo "works!"
@@ -29,6 +31,11 @@ requirements:
     - {{ compiler('cxx') }}
     # pin this to a specific clang version on osx
     - clang-{{ cxx_compiler_version }}
+  {% if cxx_compiler_version|int < 16 and libcxx_major|int >= 16 %}
+    # older clang builds don't make use of libcxx-devel, c.f.
+    # https://github.com/conda-forge/clangdev-feedstock/pull/311
+    - libcxx-devel
+  {% endif %}
     - make
     - pip
     - libboost-devel
