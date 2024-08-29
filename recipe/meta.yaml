@@ -3,6 +3,9 @@
 {% set testing_generation = "0" %}
 {% set libcxx_major = 17 %}
 
+{% if libcxx_major is undefined %}
+{% set libcxx_major = 99 %}
+{% endif %}
 {% if cxx_compiler_version is undefined %}
 {% set cxx_compiler_version = libcxx_major %}
 {% endif %}
