@@ -2,9 +2,11 @@
 # there are substantial infrastructure changes
 {% set testing_generation = "0" %}
 
+{% if libcxx_major is undefined %}
+{% set libcxx_major = 99 %}
+{% endif %}
 {% if cxx_compiler_version is undefined %}
 {% set cxx_compiler_version = libcxx_major %}
-{% set libcxx_major = 99 %}
 {% endif %}
 
 package:
