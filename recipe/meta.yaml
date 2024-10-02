@@ -31,11 +31,6 @@ requirements:
     - {{ compiler('cxx') }}
     # pin this to a specific clang version on osx
     - clang-{{ cxx_compiler_version }}
-  {% if cxx_compiler_version|int < 16 and libcxx_major|int >= 16 %}
-    # older clang builds don't make use of libcxx-devel, c.f.
-    # https://github.com/conda-forge/clangdev-feedstock/pull/311
-    - libcxx-devel
-  {% endif %}
     - make
     - pip
     - libboost-devel

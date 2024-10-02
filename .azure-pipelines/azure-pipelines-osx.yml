@@ -8,29 +8,29 @@ jobs:
     vmImage: macOS-12
   strategy:
     matrix:
-      osx_64_cxx_compiler_version15libcxx_major18:
-        CONFIG: osx_64_cxx_compiler_version15libcxx_major18
-        UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version15libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version15libcxx_major99
-        UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version16libcxx_major18:
-        CONFIG: osx_64_cxx_compiler_version16libcxx_major18
+      osx_64_cxx_compiler_version16libcxx_major19:
+        CONFIG: osx_64_cxx_compiler_version16libcxx_major19
         UPLOAD_PACKAGES: 'True'
       osx_64_cxx_compiler_version16libcxx_major99:
         CONFIG: osx_64_cxx_compiler_version16libcxx_major99
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version17libcxx_major18:
-        CONFIG: osx_64_cxx_compiler_version17libcxx_major18
+      osx_64_cxx_compiler_version17libcxx_major19:
+        CONFIG: osx_64_cxx_compiler_version17libcxx_major19
         UPLOAD_PACKAGES: 'True'
       osx_64_cxx_compiler_version17libcxx_major99:
         CONFIG: osx_64_cxx_compiler_version17libcxx_major99
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version18libcxx_major18:
-        CONFIG: osx_64_cxx_compiler_version18libcxx_major18
+      osx_64_cxx_compiler_version18libcxx_major19:
+        CONFIG: osx_64_cxx_compiler_version18libcxx_major19
         UPLOAD_PACKAGES: 'True'
       osx_64_cxx_compiler_version18libcxx_major99:
         CONFIG: osx_64_cxx_compiler_version18libcxx_major99
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version19libcxx_major19:
+        CONFIG: osx_64_cxx_compiler_version19libcxx_major19
+        UPLOAD_PACKAGES: 'True'
+      osx_64_cxx_compiler_version19libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version19libcxx_major99
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}
