@@ -1,11 +1,3 @@
-# when rebuilding older libcxx, we need pin the libcxx version
-# of libcxx-testing, to avoid that the downstream test pulls in
-# a newer libcxx than the one being built/tested.
-libcxx_major:
-  - 18
-  # for boostrapping purposes, we also need a build of
-  # libcxx-testing without a libcxx constraint
-  - 99
 # the builds of libcxx-testing depend on a specific
 # clang version; to test new libcxx against old clang
 # we need to build libcxx-testing for several versions.
