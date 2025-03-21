@@ -15,7 +15,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '20'
 libboost_devel:
-- '1.86'
+- '1.84'
 libcxx_major:
 - '20'
 macos_machine:
