@@ -5,51 +5,101 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-13
+    vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_cxx_compiler_version16libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version16libcxx_major21
+      osx_64_cxx_compiler_version16:
+        CONFIG: osx_64_cxx_compiler_version16
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version16libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version16libcxx_major99
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version17:
+        CONFIG: osx_64_cxx_compiler_version17
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version17libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version17libcxx_major21
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version18:
+        CONFIG: osx_64_cxx_compiler_version18
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version17libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version17libcxx_major99
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version19:
+        CONFIG: osx_64_cxx_compiler_version19
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version18libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version18libcxx_major21
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version20:
+        CONFIG: osx_64_cxx_compiler_version20
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version18libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version18libcxx_major99
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version21:
+        CONFIG: osx_64_cxx_compiler_version21
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version19libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version19libcxx_major21
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version16:
+        CONFIG: osx_arm64_cxx_compiler_version16
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version19libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version19libcxx_major99
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version17:
+        CONFIG: osx_arm64_cxx_compiler_version17
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version20libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version20libcxx_major21
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version18:
+        CONFIG: osx_arm64_cxx_compiler_version18
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version20libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version20libcxx_major99
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version19:
+        CONFIG: osx_arm64_cxx_compiler_version19
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version21libcxx_major21:
-        CONFIG: osx_64_cxx_compiler_version21libcxx_major21
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version20:
+        CONFIG: osx_arm64_cxx_compiler_version20
         UPLOAD_PACKAGES: 'True'
-      osx_64_cxx_compiler_version21libcxx_major99:
-        CONFIG: osx_64_cxx_compiler_version21libcxx_major99
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_cxx_compiler_version21:
+        CONFIG: osx_arm64_cxx_compiler_version21
         UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
   timeoutInMinutes: 360
   variables: {}
 
   steps:
   # TODO: Fast finish on azure pipelines?
   - script: |
+      export MINIFORGE_HOME=$(tools_install_dir)
+      export CONDA_BLD_PATH=$(build_workspace_dir)
       export CI=azure
       export flow_run_id=azure_$(Build.BuildNumber).$(System.JobAttempt)
       export remote_url=$(Build.Repository.Uri)
