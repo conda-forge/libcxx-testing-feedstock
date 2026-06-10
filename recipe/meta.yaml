@@ -18,7 +18,7 @@ source:
   path: .
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not osx]
   script:
     echo "works!"
