@@ -8,8 +8,8 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_cxx_compiler_version19:
-        CONFIG: osx_64_cxx_compiler_version19
+      osx_64_cxx_compiler_version19libcxx_major23:
+        CONFIG: osx_64_cxx_compiler_version19libcxx_major23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-14
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -18,8 +18,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_cxx_compiler_version20:
-        CONFIG: osx_64_cxx_compiler_version20
+      osx_64_cxx_compiler_version19libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version19libcxx_major99
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-14
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -28,8 +28,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_cxx_compiler_version21:
-        CONFIG: osx_64_cxx_compiler_version21
+      osx_64_cxx_compiler_version20libcxx_major23:
+        CONFIG: osx_64_cxx_compiler_version20libcxx_major23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-14
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -38,8 +38,68 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_cxx_compiler_version22:
-        CONFIG: osx_64_cxx_compiler_version22
+      osx_64_cxx_compiler_version20libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version20libcxx_major99
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version21libcxx_major23:
+        CONFIG: osx_64_cxx_compiler_version21libcxx_major23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version21libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version21libcxx_major99
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version22libcxx_major23:
+        CONFIG: osx_64_cxx_compiler_version22libcxx_major23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version22libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version22libcxx_major99
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version23libcxx_major23:
+        CONFIG: osx_64_cxx_compiler_version23libcxx_major23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version23libcxx_major99:
+        CONFIG: osx_64_cxx_compiler_version23libcxx_major99
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-14
         build_workspace_dir: ~/miniforge3/conda-bld

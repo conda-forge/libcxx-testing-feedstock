@@ -22,7 +22,7 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: osx_arm64_cxx_compiler_version19
+          - CONFIG: osx_arm64_cxx_compiler_version19libcxx_major23
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_workspace_dir: ~/miniforge3/conda-bld
@@ -33,7 +33,7 @@ jobs:
             resize_partitions: False
             runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
-          - CONFIG: osx_arm64_cxx_compiler_version20
+          - CONFIG: osx_arm64_cxx_compiler_version19libcxx_major99
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_workspace_dir: ~/miniforge3/conda-bld
@@ -44,7 +44,7 @@ jobs:
             resize_partitions: False
             runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
-          - CONFIG: osx_arm64_cxx_compiler_version21
+          - CONFIG: osx_arm64_cxx_compiler_version20libcxx_major23
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_workspace_dir: ~/miniforge3/conda-bld
@@ -55,7 +55,73 @@ jobs:
             resize_partitions: False
             runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
-          - CONFIG: osx_arm64_cxx_compiler_version22
+          - CONFIG: osx_arm64_cxx_compiler_version20libcxx_major99
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version21libcxx_major23
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version21libcxx_major99
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version22libcxx_major23
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version22libcxx_major99
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version23libcxx_major23
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version23libcxx_major99
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_workspace_dir: ~/miniforge3/conda-bld
