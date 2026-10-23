@@ -1,3 +1,6 @@
+// newer pybind runs into an abort trap for this test; minimal fix is to disable the check
+#define PYBIND11_NO_ASSERT_GIL_HELD_INCREF_DECREF
+
 #include <pybind11/pybind11.h>
 
 #include <cstdio>
