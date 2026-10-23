@@ -14,6 +14,8 @@ cxx_compiler_version:
 - '19'
 libboost_devel:
 - '1.88'
+libcxx_major:
+- '23'
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:

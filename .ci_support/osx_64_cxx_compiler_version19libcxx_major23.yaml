@@ -11,10 +11,12 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '20'
+- '19'
 libboost_devel:
 - '1.88'
+libcxx_major:
+- '23'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 target_platform:
-- osx-arm64
+- osx-64
