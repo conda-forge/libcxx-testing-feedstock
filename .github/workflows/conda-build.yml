@@ -22,39 +22,6 @@ jobs:
       max-parallel: 50
       matrix:
         include:
-          - CONFIG: osx_arm64_cxx_compiler_version16
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            build_workspace_dir: ~/miniforge3/conda-bld
-            docker_run_args: 
-            free_disk_space: skip
-            os: macos
-            pagefile_size: 0
-            resize_partitions: False
-            runs_on: ['macos-14']
-            tools_install_dir: ~/miniforge3
-          - CONFIG: osx_arm64_cxx_compiler_version17
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            build_workspace_dir: ~/miniforge3/conda-bld
-            docker_run_args: 
-            free_disk_space: skip
-            os: macos
-            pagefile_size: 0
-            resize_partitions: False
-            runs_on: ['macos-14']
-            tools_install_dir: ~/miniforge3
-          - CONFIG: osx_arm64_cxx_compiler_version18
-            STORE_BUILD_ARTIFACTS: False
-            UPLOAD_PACKAGES: True
-            build_workspace_dir: ~/miniforge3/conda-bld
-            docker_run_args: 
-            free_disk_space: skip
-            os: macos
-            pagefile_size: 0
-            resize_partitions: False
-            runs_on: ['macos-14']
-            tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version19
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
@@ -78,6 +45,17 @@ jobs:
             runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version21
+            STORE_BUILD_ARTIFACTS: False
+            UPLOAD_PACKAGES: True
+            build_workspace_dir: ~/miniforge3/conda-bld
+            docker_run_args: 
+            free_disk_space: skip
+            os: macos
+            pagefile_size: 0
+            resize_partitions: False
+            runs_on: ['macos-14']
+            tools_install_dir: ~/miniforge3
+          - CONFIG: osx_arm64_cxx_compiler_version22
             STORE_BUILD_ARTIFACTS: False
             UPLOAD_PACKAGES: True
             build_workspace_dir: ~/miniforge3/conda-bld

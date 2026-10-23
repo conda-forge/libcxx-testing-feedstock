@@ -8,36 +8,6 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_cxx_compiler_version16:
-        CONFIG: osx_64_cxx_compiler_version16
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-14
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_64_cxx_compiler_version17:
-        CONFIG: osx_64_cxx_compiler_version17
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-14
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_64_cxx_compiler_version18:
-        CONFIG: osx_64_cxx_compiler_version18
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-14
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
       osx_64_cxx_compiler_version19:
         CONFIG: osx_64_cxx_compiler_version19
         UPLOAD_PACKAGES: 'True'
@@ -60,6 +30,16 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_cxx_compiler_version21:
         CONFIG: osx_64_cxx_compiler_version21
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-14
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_cxx_compiler_version22:
+        CONFIG: osx_64_cxx_compiler_version22
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-14
         build_workspace_dir: ~/miniforge3/conda-bld

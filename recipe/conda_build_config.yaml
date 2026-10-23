@@ -2,24 +2,18 @@
 # clang version; to test new libcxx against old clang
 # we need to build libcxx-testing for several versions.
 c_compiler_version:         # [osx]
+  - 22                      # [osx]
   - 21                      # [osx]
   - 20                      # [osx]
   - 19                      # [osx]
-  - 18                      # [osx]
-  - 17                      # [osx]
-  - 16                      # [osx]
 cxx_compiler_version:       # [osx]
+  - 22                      # [osx]
   - 21                      # [osx]
   - 20                      # [osx]
   - 19                      # [osx]
-  - 18                      # [osx]
-  - 17                      # [osx]
-  - 16                      # [osx]
 # not linked to LLVM; can stay constant,
 # but must have the same length as above
 fortran_compiler_version:   # [osx]
-  - 13                      # [osx]
-  - 13                      # [osx]
   - 13                      # [osx]
   - 13                      # [osx]
   - 13                      # [osx]
