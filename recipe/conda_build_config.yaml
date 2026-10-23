@@ -29,3 +29,6 @@ fortran_compiler_version:   # [osx]
   - 13                      # [osx]
   - 13                      # [osx]
   - 13                      # [osx]
+
+channel_sources:
+  - conda-forge/label/llvm_dev,conda-forge
