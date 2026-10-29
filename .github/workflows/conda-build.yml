@@ -31,7 +31,7 @@ jobs:
             os: macos
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['macos-15']
+            runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version17
             STORE_BUILD_ARTIFACTS: False
@@ -42,7 +42,7 @@ jobs:
             os: macos
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['macos-15']
+            runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version18
             STORE_BUILD_ARTIFACTS: False
@@ -53,7 +53,7 @@ jobs:
             os: macos
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['macos-15']
+            runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version19
             STORE_BUILD_ARTIFACTS: False
@@ -64,7 +64,7 @@ jobs:
             os: macos
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['macos-15']
+            runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
           - CONFIG: osx_arm64_cxx_compiler_version20
             STORE_BUILD_ARTIFACTS: False
@@ -75,7 +75,7 @@ jobs:
             os: macos
             pagefile_size: 0
             resize_partitions: False
-            runs_on: ['macos-15']
+            runs_on: ['macos-14']
             tools_install_dir: ~/miniforge3
     steps:
 
