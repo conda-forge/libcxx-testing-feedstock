@@ -5,4 +5,4 @@ github:
 conda_build:
   pkg_format: '2'
 provider:
-  osx_arm64: default
+  osx_arm64: github_actions
