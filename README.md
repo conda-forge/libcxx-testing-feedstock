@@ -13,7 +13,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/libcxx-testing-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/libcxx-testing-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -59,41 +66,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_cxx_compiler_version20" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cxx_compiler_version16</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cxx_compiler_version16" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cxx_compiler_version17</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cxx_compiler_version17" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cxx_compiler_version18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cxx_compiler_version18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cxx_compiler_version19</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cxx_compiler_version19" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_cxx_compiler_version20</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9567&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libcxx-testing-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_cxx_compiler_version20" alt="variant">
                 </a>
               </td>
             </tr>

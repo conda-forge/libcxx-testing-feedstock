@@ -58,56 +58,6 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_cxx_compiler_version16:
-        CONFIG: osx_arm64_cxx_compiler_version16
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_arm64_cxx_compiler_version17:
-        CONFIG: osx_arm64_cxx_compiler_version17
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_arm64_cxx_compiler_version18:
-        CONFIG: osx_arm64_cxx_compiler_version18
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_arm64_cxx_compiler_version19:
-        CONFIG: osx_arm64_cxx_compiler_version19
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
-      osx_arm64_cxx_compiler_version20:
-        CONFIG: osx_arm64_cxx_compiler_version20
-        UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
-        build_workspace_dir: ~/miniforge3/conda-bld
-        free_disk_space: skip
-        pagefile_size: 0
-        resize_partitions: false
-        store_build_artifacts: false
-        tools_install_dir: ~/miniforge3
   timeoutInMinutes: 360
   variables: {}
 
